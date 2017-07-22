@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+</head>
+<body ng-controller="myCtrl">
+<header>
+    <a href="loginPassWay.html" class="iconfont icon-arrow-left"></a>
+    修改登录页面
+</header>
+<p class="title">
+    {{titletxt2}}
+</p>
+<div class="password">
+    <i class="iconfont icon-suo suo"></i>
+    <input type={{type}} ng-class="cla" ng-focus="changeType()" ng-model="pass2" ng-change="gaibian()">
+    <i class="iconfont icon-yanjing yanjing" ng-click="show()"></i>
+</div>
+<a href={{src2}} class="submint_Btn" ng-click="submit2()">确定</a>
+</body>
+<script src="../js/angular.min.js"></script>
+<script src="../js/js.js"></script>
+</html>

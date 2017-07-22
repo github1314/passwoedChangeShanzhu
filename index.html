@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app=app>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body ng-controller="myCtrl">
+<header>
+    <a href="#" class="iconfont icon-arrow-left"></a>
+    登录密码验证
+</header>
+<p class="title title_1">
+    {{titletxt}}
+</p>
+<div class="wayPassword">
+    <a href="html/loginPassWay.html">通过原登录密码验证</a>
+</div>
+<div class="wayTel">
+    <a href="html/telWay.html">通过手机号进行验证</a>
+</div>
+
+</body>
+<script src="js/angular.min.js"></script>
+<script src="js/js.js"></script>
+</html>

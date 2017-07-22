@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+</head>
+<body ng-controller="myCtrl">
+<header>
+    <a href="../index.html" class="iconfont icon-arrow-left"></a>
+    手机验证
+</header>
+<p class="title titleTel">
+    {{titletxt4}}
+    <a>{{18610644615 | changetel}}</a>
+</p>
+<div class="password">
+    <i class="iconfont icon-suo suo"></i>
+    <input type=text ng-class="cla" ng-focus="changeType()" ng-model="pass4" ng-change="gaibian()"  pattern="^1[3|4|5|7|8][0-9]{9}$">
+    <button href="#" class="way" ng-click="timer()" ng-disabled="dis">{{timeWay}}</button>
+</div>
+<a href={{src4}} class="submint_Btn" ng-click="submit4()">确定</a>
+
+</body>
+<script src="../js/angular.min.js"></script>
+<script src="../js/js.js"></script>
+</html>
